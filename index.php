@@ -6,6 +6,7 @@ include './includes/header.php';
 include './includes/banner.php';
 
 
+
 $filmes = new Filmes();
 $dados = $filmes -> LFBanco();
 

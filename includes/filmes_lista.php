@@ -4,7 +4,8 @@
 
         <div class="row">
 
-            <?php for ($i = 0; $i < 8; $i++) { include './includes/filmes_card.php'; } ?>
+            <?php for ($i = 0; $i < 8; $i++) { 
+                include './includes/filmes_card.php'; } ?>
             
         </div>
 
