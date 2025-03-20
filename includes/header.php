@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./assets/CSS/carrossel.css">
     <link rel="stylesheet" href="./assets/CSS/filmes.css">
     <link rel="stylesheet" href="./assets/CSS/usuario.css">
-    <link rel="./assets/css/login.php"
+    <link rel="stylesheet" href="./assets/CSS/login.css">
 
 </head>
 
@@ -36,7 +36,7 @@
             <ul class="menu">
                 <li><a href="./index.php">Inicio</a></li>
                 <li><a href="./listarfilmes.php">Filmes</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="./sobre.php">Sobre</a></li>
             </ul>
 
             <ul class="menu-icones">

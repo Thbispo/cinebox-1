@@ -1,6 +1,18 @@
 <?php
 include './includes/header.php';
 
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true'){
+session_destroy();
+header('location:index.php');
+}
+
+if ( !isset($_SESSION['id_pessoa']) && !empty($_SESSION)){
+    header('location:usuario-login.php');
+}
+
+
 
 ?>
 <section id="usuario-principal">
@@ -12,8 +24,6 @@ include './includes/header.php';
         ?>
     </main>
 </section>
-
-
 
 <?php
 
