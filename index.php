@@ -1,16 +1,16 @@
 <?php
 require './classes/Filmes.php';
 
-$titilo = 'Cinebox - Inicio';
+$titulo = 'Cinebox - Inicio';
 include './includes/header.php';
 include './includes/banner.php';
 
 
-
 $filmes = new Filmes();
-$dados = $filmes -> LFBanco();
+$dadosFilmes = $filmes ->exibirListaFilmes();
 
-echo $dados;
+
+
 
 include './includes/filmes_lista.php';
 
