@@ -7,7 +7,7 @@
     <title>
         <?php
         if (isset($titulo)) {
-            echo $titilo;
+            echo $titulo;
         } else {
             echo 'Cinebox';
         }
@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="./assets/CSS/filmes.css">
     <link rel="stylesheet" href="./assets/CSS/usuario.css">
     <link rel="stylesheet" href="./assets/CSS/login.css">
+    <link rel="stylesheet" href="./assets/CSS/filtro.css">
+    <link rel="stylesheet" href="./assets/CSS/detalhes.css">
+
+
 
 </head>
 

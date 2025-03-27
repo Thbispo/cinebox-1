@@ -20,7 +20,6 @@ class Filmes {
 
         $script =  'SELECT * FROM tb_filmes' . $auxScript;
 
-        var_dump($script);
 
         return $banco->query($script)->fetchALL();
         
