@@ -4,7 +4,7 @@ require './classes/Filmes.php';
 include './includes/header.php';
 
 
-session_start();
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true'){
 session_destroy();

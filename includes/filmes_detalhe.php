@@ -1,14 +1,32 @@
+<?php
+
+require './classes/Generos.php';
+
+require './classes/Filmes.php';
+
+$id = $_GET['id'];
+
+$filmes = new Filmes();
+$dados = $filmes->exibirDetalhesFilmes();
+
+$generos = new Generos();
+$dadosGeneros = $generos->consultarGeneroByIdFilme($id);
+
+?>
+
+
 <section id="detalhe">
     <main class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 my-4">
-                <img src="<?= img('poster/' . $dados['poster']) ?>"> alt="poster Jedi Survivor" class="foto ">
+                <img src="./assets/img/<?= ('poster/' . $dados['poster']) ?>" alt="poster Jedi Survivor" class="foto">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 detalhe-produto py-5">
                 <h1 class="titulo-jogo"><?= $dados['nome'] ?></h1>
 
                 <div class="genero">
                     <?php foreach ($dadosGeneros as $gen) { ?>
+
                         <span style="background-color: #<?= $gen['cor'] ?>;"><?= $gen['nome'] ?></span>
                     <?php } ?>
                 </div>

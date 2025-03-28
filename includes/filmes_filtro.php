@@ -1,9 +1,9 @@
-<section id="filtroProdutos">
+<section id="Filtro-Produtos">
     <main class="container">
         <div class="row">
             <div class="col-2 col-lg-2 col-xs-12">
 
-                <form action="#" method="get" class="filtro">
+                <form action="./" method="get" class="filtro">
                     <?php foreach ($dadosGeneros as $value) { ?>
                         <label for="<?= $value['nome'] ?>" class="label">
                             <input
